@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         {
           path:'book/:id',
           element: <PrivateRoute> <BookService></BookService></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:3389/services/${params.id}`)
+          loader: ({params}) => fetch(`https://car-doctor-server-jade-alpha.vercel.app/services/${params.id}`)
 
         },
         {

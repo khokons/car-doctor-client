@@ -27,7 +27,7 @@ const BookService = () => {
         console.log(booking)
 
         
-        fetch('http://localhost:3389/bookings',{
+        fetch('https://car-doctor-server-jade-alpha.vercel.app/bookings',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
